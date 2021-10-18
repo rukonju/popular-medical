@@ -1,0 +1,18 @@
+.headers{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headers h1{
+    color: honeydew;
+    padding-left: 20px;
+}
+@media only screen and (min-width:780px){
+    .headers span{
+        font-size: 60px;
+    }
+    
+}

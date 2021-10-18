@@ -1,0 +1,38 @@
+[
+    {
+        "id":"1",
+        "title":"Eye Care",
+        "details":"hello this is your madical care for better treatment of your health",
+        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+    },
+    {
+        "id":"2",
+        "title":"Medical Checkup",
+        "details":"hello this is your madical care for better treatment of your health",
+        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+    },
+    {
+        "id":"3",
+        "title":"Dental Care",
+        "details":"hello this is your madical care for better treatment of your health",
+        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+    },
+    {
+        "id":"4",
+        "title":"Cardiology",
+        "details":"hello this is your madical care for better treatment of your health",
+        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+    },
+    {
+        "id":"5",
+        "title":"Vaccination",
+        "details":"hello this is your madical care for better treatment of your health",
+        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+    },
+    {
+        "id":"6",
+        "title":"Laboratory Service",
+        "details":"hello this is your madical care for better treatment of your health",
+        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+    }
+]
