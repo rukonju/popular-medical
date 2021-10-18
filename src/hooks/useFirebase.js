@@ -6,20 +6,12 @@ firebaseInitialize()
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
-   /*  const [email, setEmail] = useState('');
-    const [password, setPassword] = useState(''); */
     const [loading, setLoading] = useState(true);
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
     const signInWithGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-        .then(result=>{
-            console(result.user);
-        })
-        .catch(error=>{
-            console.log(error.code)
-        })
+        return signInWithPopup(auth, googleProvider)
         .finally(() => { setLoading(false) });
     }
         

@@ -1,11 +1,10 @@
 import React from 'react';
-
 import { useForm } from "react-hook-form";
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 
 const SignUp = () => {
    
-    const {user,handleSignUp}=useFirebase()
+    const {user,handleSignUp}=useAuth()
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data =>{

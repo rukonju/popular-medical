@@ -1,38 +1,39 @@
+
 [
     {
         "id":"1",
         "title":"Eye Care",
-        "details":"hello this is your madical care for better treatment of your health",
-        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+        "details":"Eye is a very important part of out body. We should take care of it. We are here to treatment any kind of eyes problems. If you face any problems of your eye than contact our hospital. A group of doctors are deticated to give service",
+        "image":"https://i.ibb.co/MRzdGvw/checkup-5.png"
     },
     {
         "id":"2",
         "title":"Medical Checkup",
-        "details":"hello this is your madical care for better treatment of your health",
-        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+        "details":"Health is whelth. Your body is a gift from god. We are here to provide you any health related service that you need.We use the letest technology of medical science.Check up your body regularly and stay happy.",
+        "image":"https://i.ibb.co/JyH1VC4/checkup.png"
     },
     {
         "id":"3",
         "title":"Dental Care",
-        "details":"hello this is your madical care for better treatment of your health",
-        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+        "details":"We use the letest technology to provide dental care. If you suffer this kind of problems than appiont as soon as possible to our hospital. which has a  clean and calm environvent around it.",
+        "image":"https://i.ibb.co/C0ttjTT/checkup-2.png"
     },
     {
         "id":"4",
         "title":"Cardiology",
-        "details":"hello this is your madical care for better treatment of your health",
-        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+        "details":"We use letest technology for cardiology. If your heart is well then you are fine. If you suffer any problems of your heart then appoint now to our hospital.",
+        "image":"https://i.ibb.co/Y2xS4XL/checkup-1.png"
     },
     {
         "id":"5",
         "title":"Vaccination",
-        "details":"hello this is your madical care for better treatment of your health",
-        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+        "details":"Covid is around the world. It is create pendamic all around the world. So it is high time to vaccinated. We provide covid 19 vaccin. Contact us to know more about vaccin. ",
+        "image":"https://i.ibb.co/hVSscsq/checkup-3.png"
     },
     {
         "id":"6",
-        "title":"Laboratory Service",
-        "details":"hello this is your madical care for better treatment of your health",
-        "image":"https://sinceindependence-english.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/09/basic-eye-care-1.png"
+        "title":"X-ray",
+        "details":"All kind of X-ray service are provided from here. Apointment is required to get X-ray service. Please log in and visit appoinment page for details.",
+        "image":"https://i.ibb.co/NLtRpjX/checkup-4.png"
     }
 ]

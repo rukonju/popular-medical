@@ -1,0 +1,11 @@
+.appoinment-form input{
+    padding: 10px;
+    font-size: 20px;
+}
+.appoinment-form label{
+    font-size: 20px;
+}
+.appoinment-form input:focus{
+    box-shadow: none;
+    outline: 1px solid black;
+}
