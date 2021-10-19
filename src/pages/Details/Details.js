@@ -1,5 +1,8 @@
+
 import React from 'react';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import useServices from '../../hooks/useServices';
 
 const Details = () => {
@@ -9,11 +12,21 @@ const Details = () => {
     const {title,image,details}=service?service:{};
     console.log(serviceId)
     return (
-        <div>
-            <img src={image} alt="" />
-            <h1>{title}</h1>
-            <p>{details}</p>
-        </div>
+        <Container>
+            <Row>
+                <Col>
+                    <h1>{title}</h1>
+                    <p>{details}</p>
+                    <NavLink to="/appoinment">
+                    <Button>Make Appoinment</Button>
+                    </NavLink>
+                </Col>
+                <Col>
+                    <img src={image} alt="" />
+                </Col>
+            </Row>
+            
+        </Container>
     );
 };
 

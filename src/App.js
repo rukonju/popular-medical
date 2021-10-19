@@ -5,7 +5,6 @@ import AuthProvider from './context/AuthProvider';
 import About from './pages/About/About';
 import Appoinment from './pages/Appoinment/Appoinment';
 import Details from './pages/Details/Details';
-import Doctors from './pages/Doctors/Doctors';
 import Header from './pages/Header/Header';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
@@ -31,15 +30,12 @@ function App() {
           <Route path="/services">
             <Services></Services>
           </Route>
-          <Route path="/ditails/:serviceId">
+          <PrivateRoute path="/ditails/:serviceId">
             <Details></Details>
-          </Route>
+          </PrivateRoute>
           <PrivateRoute path="/appoinment">
             <Appoinment></Appoinment>
           </PrivateRoute>
-          <Route path="/doctors">
-            <Doctors></Doctors>
-          </Route>
           <Route path="/about">
             <About></About>
           </Route>

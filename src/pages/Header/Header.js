@@ -29,12 +29,12 @@ const Header = () => {
                             <NavLink to="/home">Home</NavLink>
                             <NavLink to="/services">Services</NavLink>
                             <NavLink to="/appoinment">Appoinment</NavLink>
-                            <NavLink to="/doctors">Our Doctors</NavLink>
+                            <NavLink to="/payment">Payment</NavLink>
                             <NavLink to="/about">About US</NavLink>
                         </Nav>
                         <div className="nav-btn">
                             {
-                                user?.email?<div> <span>{user.displayName}</span><Button onClick={()=>logOut()}>Logout</Button></div>:
+                                user?.email?<div> <img src={user?.photoURL} alt="" width="50px" style={{borderRadius:"50px"}} /> <span>{user?.displayName}</span><Button onClick={()=>logOut()}>Logout</Button></div>:
                                 <div>
                                     <NavLink to="/login">
                                     <Button>Login</Button>

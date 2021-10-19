@@ -1,23 +1,35 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Button, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
     const{id, title, details, image}=service;
     
     return (
-        <div>
-            <Row>
-                <Col>
-                    <img style={{borderRadius:'100px'}} src={image} alt="" width="250" height="250"/>
-                </Col>
-                <Col sm>
+        <Col>
+            <div className="m-3 bg-info">
+            <Row xs={1} md={2}>
+            <Col>
+                <div>
+                <img src={image} alt=""width="100%"/>  
+                </div>
+            </Col>
+            <Col>
+                <div>
                     <h3>{title}</h3>
                     <p>{details}</p>
-                    <Link to={`/ditails/${id}`}>ditails</Link>
-                </Col>
+                    <Link to={`/ditails/${id}`}>
+                    
+                            <Button variant="secondary">
+                                Ditails
+                            </Button>
+
+                    </Link>
+                </div>
+            </Col>
             </Row>
-        </div>
+            </div>
+        </Col>
     );
 };
 

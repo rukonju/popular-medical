@@ -10,26 +10,18 @@
     color: honeydew;
     padding-left: 20px;
 }
-.serv-home{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-gap: 10px;
-    border-radius: 10px;
-
+.service{
+    border: 1px solid black;
+    border-radius:10px; 
 }
-.serv-home .service{
-    background-color: rgb(129, 176, 238);
-    margin: 10px;
-    padding: 10px;
-    border-radius:10px;
-    color: rgb(255, 255, 255);
+.service:hover{
+    color: white;
+    box-shadow:1px 2px 20px gray;
+    background-color: black;
 }
 @media only screen and (min-width:780px){
     .headers span{
         font-size: 60px;
-    }
-    .serv-home{
-        grid-template-columns: repeat(3,1fr);
     }
     
 }
