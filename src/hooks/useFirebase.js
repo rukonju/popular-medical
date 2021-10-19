@@ -21,15 +21,16 @@ const useFirebase = () => {
     //create user
     const handleSignIn=(email,password)=>{
             signInWithEmailAndPassword(auth, email, password)
-            .then(result=>{})
+            .then(result=>{setUser(result.user)})
             .catch(error=>{
                 setError(error)
             })
             .finally(() => { setLoading(false) })
     }
-    const handleSignUp = (email, password,name) => {
+    const handleSignUp = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
         .then(result => {
+            setUser(result.user)
         })
         .catch(error => {
             setError(error)

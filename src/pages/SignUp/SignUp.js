@@ -16,11 +16,10 @@ const SignUp = () => {
     const ridirect_url=location.state?.from || "/home";
 
     const onSubmit = data =>{
-        const {email,password,name}=data;
+        const {email,password}=data;
         setPassword(password)
         if(password.length>=6){
-
-            handleSignUp(email,password,name)
+            handleSignUp(email,password)
             history.push(ridirect_url)
         } 
     };

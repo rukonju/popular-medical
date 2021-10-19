@@ -5,7 +5,7 @@ import { useHistory, useLocation } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import loginImage from '../../images/login.jpg'
-import './Login.css'
+import './Login.css';
 
 const Login = () => {
 
@@ -16,7 +16,6 @@ const Login = () => {
     const ridirect_url=location?.state?.from || "/home";
     const onSubmit = data =>{
         const {email,password}=data;
-        console.log(data)
         handleSignIn(email,password)   
     };
 
@@ -63,7 +62,6 @@ const Login = () => {
                     </div>
                 </Col>
             </Row>
-            
         </Container>
     );
 };
