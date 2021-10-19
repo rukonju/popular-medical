@@ -15,15 +15,13 @@ const Service = ({service}) => {
                 </div>
             </Col>
             <Col>
-                <div>
+                <div className="p-2">
                     <h3>{title}</h3>
                     <p>{details}</p>
                     <Link to={`/ditails/${id}`}>
-                    
-                            <Button variant="secondary">
-                                Ditails
-                            </Button>
-
+                        <Button variant="secondary">
+                            Ditails
+                        </Button>
                     </Link>
                 </div>
             </Col>

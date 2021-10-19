@@ -10,15 +10,7 @@
     color: honeydew;
     padding-left: 20px;
 }
-.service{
-    border: 1px solid black;
-    border-radius:10px; 
-}
-.service:hover{
-    color: white;
-    box-shadow:1px 2px 20px gray;
-    background-color: black;
-}
+
 @media only screen and (min-width:780px){
     .headers span{
         font-size: 60px;

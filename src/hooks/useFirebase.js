@@ -17,6 +17,7 @@ const useFirebase = () => {
         
         const handleSignIn=(email,password)=>{
             console.log(email,password)
+            setLoading(true)
                 signInWithEmailAndPassword(auth, email, password)
                 .then(result=>{
                     console(result.user)
@@ -37,6 +38,7 @@ const useFirebase = () => {
               .catch(error => {
                console.log(error)
               })
+              .finally(() => { setLoading(false) })
           }    
     
 

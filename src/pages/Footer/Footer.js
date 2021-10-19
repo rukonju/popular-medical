@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-// import { Facebook, Youtube, Twitter } from 'react-bootstrap-icons';
+import { Facebook, Youtube, Twitter, TelephoneFill, EnvelopeFill, GeoAltFill } from 'react-bootstrap-icons';
 import { Link as Navlink } from "react-router-dom";
 
 const Footer = () => {
@@ -15,19 +15,19 @@ const Footer = () => {
             <Row>
               <Col sm={3}>
                 <div className="my-4" >
-                    {/* <div className="mb-4">
+                    <div className="mb-4">
                       <Facebook className="me-4" color="white" size={24}/> 
                       <Youtube className="me-4" color="white" size={24}/>
                       <Twitter className="me-4" color="white" size={24}/>
-                    </div> */}
-                    <p className="text-light">Contact: 34908834345</p>
-                    <p className="text-light">Email: universityadcare@gmail.com</p>
-                    <p className="text-light">Location: Sherpur Town,Sherpur,Mymensingh.</p>
+                    </div> 
+                    <p className="text-light"><TelephoneFill className="me-4" color="white" size={24}/> 34908834345</p>
+                    <p className="text-light"><EnvelopeFill className="me-4" color="white" size={24}/> medicalcare@gmail.com</p>
+                    <p className="text-light"><GeoAltFill className="me-4" color="white" size={24}/> Sherpur Town, Sherpur.</p>
                   </div>
               </Col>
               <Col sm={3}>
                     <div className="my-4" >
-                      <h3 className="text-light">UAC</h3>
+                      <h3 className="text-light">Popular Medical Care</h3>
                       <div>
                           <Navlink style={style} to="/">Privecy policy</Navlink>
                           <Navlink style={style} to="/">Who We Are</Navlink>
@@ -53,7 +53,7 @@ const Footer = () => {
                     </div>
               </Col>
             </Row>
-            <p className="text-center text-white">Copyright © 2020-2021 UAC All Right Reserved.</p>
+            <p className="text-center text-white">Copyright © 2020-2021 All Right Reserved.</p>
           </Container>
         </footer>
     );

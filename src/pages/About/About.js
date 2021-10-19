@@ -14,13 +14,13 @@ const About = () => {
                 <p className="pb-5">Call for Appointment</p>
                 </div>
             </div>
-            <Container>
+            <Container className=" border p-4 rounded-3 bg-info text-center">
                 <h1>Open: 8am.</h1>
                 <h1>Close: 10pm</h1>
                 <h2>Friday to Saterday</h2>
             </Container>
             <div className="bg-light mt-5">
-            <Container>
+            <Container className="p-2">
             <Row xs={1} md={4} className="text-center">
             <Col>
                 <div>

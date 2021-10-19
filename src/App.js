@@ -13,6 +13,7 @@ import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import Services from './pages/Services/Services';
 import SignUp from './pages/SignUp/SignUp';
 import Footer from './pages/Footer/Footer';
+import Payment from './pages/Payment/Payment';
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path="/appoinment">
             <Appoinment></Appoinment>
+          </PrivateRoute>
+          <PrivateRoute path="/payment">
+            <Payment></Payment>
           </PrivateRoute>
           <Route path="/about">
             <About></About>

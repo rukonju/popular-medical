@@ -30,10 +30,10 @@ const Login = () => {
     return (
         <Container>
             <Row className="login">
-                <Col c sm={6}>
+                <Col xs={12} sm={6}>
                     <img src={loginImage} alt="" width="100%" />
                 </Col>
-                <Col className="border p-3 rounded shadow" xs={12} sm={6}>
+                <Col className="border p-3 rounded shadow" xs={12} sm={6} md={4}>
                     <Form onSubmit={handleSubmit(onSubmit)}>
                         <h1 className="text-center">Login</h1>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -50,12 +50,19 @@ const Login = () => {
                     </Form.Group>
                     <Button variant="primary" type="submit">Login</Button>
                     </Form>
+                    <Row xs={12} style={{alignItems:"center"}}>
+                        <Col><hr /></Col>
+                        <Col xs={1}><h3>Or</h3></Col>
+                        <Col><hr /></Col>
+                    </Row>
                     <Button onClick={handleGoogleSignIn}>sign in with google</Button>
+                    <br /><br />
+                    <Button onClick={handleGoogleSignIn}>sign in with Github</Button>
+                    <br />
+                    <br />
                     <div>
                         <span>Don't hane an account?</span>
-                        <NavLink to="/sign_up">
-                            <span>Register Now</span>
-                        </NavLink>
+                        <NavLink style={{textDecoration:"none",fontSize:"20px"}} to="sign_up">Register Now</NavLink>
                     </div>
                 </Col>
             </Row>
