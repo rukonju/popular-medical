@@ -25,18 +25,18 @@ const Header = () => {
                     <Navbar.Brand>Medical</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto links">
+                        <Nav className="mx-auto links">
                             <NavLink to="/home">Home</NavLink>
                             <NavLink to="/services">Services</NavLink>
                             <NavLink to="/appoinment">Appoinment</NavLink>
-                            <NavLink to="/payment">Payment</NavLink>
+                            <NavLink to="/faq">FAQ</NavLink>
                             <NavLink to="/about">About US</NavLink>
                         </Nav>
                         <div className="nav-btn">
                             {
                                 user?.email?<div> <img src={user?.photoURL} alt="" width="50px" style={{borderRadius:"50px"}} /> <span>{user?.displayName}</span><Button onClick={()=>logOut()}>Logout</Button></div>:
                                 <div>
-                                    <NavLink to="/login">
+                                <NavLink to="/login">
                                     <Button>Login</Button>
                                 </NavLink>
                                 <NavLink to="/sign_up">
@@ -44,7 +44,6 @@ const Header = () => {
                                 </NavLink>
                                 </div>
                             }
-                            
                         </div>
                     </Navbar.Collapse>
                 </Container>

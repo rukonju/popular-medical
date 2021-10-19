@@ -9,11 +9,11 @@ import './Login.css'
 
 const Login = () => {
 
-    const {user,handleSignIn,signInWithGoogle}=useAuth();
+    const {handleSignIn,signInWithGoogle}=useAuth();
     const { register, handleSubmit } = useForm();
     const history=useHistory();
     const location=useLocation();
-    const ridirect_url=location.state?.from || "/home";
+    const ridirect_url=location?.state?.from || "/home";
     const onSubmit = data =>{
         const {email,password}=data;
         console.log(data)
@@ -56,9 +56,6 @@ const Login = () => {
                         <Col><hr /></Col>
                     </Row>
                     <Button onClick={handleGoogleSignIn}>sign in with google</Button>
-                    <br /><br />
-                    <Button onClick={handleGoogleSignIn}>sign in with Github</Button>
-                    <br />
                     <br />
                     <div>
                         <span>Don't hane an account?</span>

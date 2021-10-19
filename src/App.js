@@ -13,7 +13,8 @@ import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import Services from './pages/Services/Services';
 import SignUp from './pages/SignUp/SignUp';
 import Footer from './pages/Footer/Footer';
-import Payment from './pages/Payment/Payment';
+import FAQ from './pages/FAQ/FAQ';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
@@ -37,8 +38,10 @@ function App() {
           <PrivateRoute path="/appoinment">
             <Appoinment></Appoinment>
           </PrivateRoute>
-          <PrivateRoute path="/payment">
-            <Payment></Payment>
+          <PrivateRoute path="/faq">
+            <Container style={{marginTop:"100px"}}>
+            <FAQ></FAQ>
+            </Container>
           </PrivateRoute>
           <Route path="/about">
             <About></About>

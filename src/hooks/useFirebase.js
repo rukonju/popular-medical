@@ -2,48 +2,41 @@ import { useState, useEffect } from 'react';
 import { getAuth,signInWithEmailAndPassword,createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
 import firebaseInitialize from '../Firebase/firebase.init';
 
+
 firebaseInitialize()
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [loading, setLoading] = useState(true);
+    const [error,setError]=useState()
+    
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
-
+    // sign in with google
     const signInWithGoogle = () => {
         return signInWithPopup(auth, googleProvider)
+        .catch(error=>setError(error))
         .finally(() => { setLoading(false) });
     }
-        
-        const handleSignIn=(email,password)=>{
-            console.log(email,password)
-            setLoading(true)
-                signInWithEmailAndPassword(auth, email, password)
-                .then(result=>{
-                    console(result.user)
-                })
-                .catch(error=>{
-                    console.log(error?.code)
-                })
-                .finally(() => { setLoading(false) })
-        }
-
-        const handleSignUp = (email, password) => {
-            createUserWithEmailAndPassword(auth, email, password)
-              .then(result => {
-                const user = result.user;
-                console.log(user);
-               
-              })
-              .catch(error => {
-               console.log(error)
-              })
-              .finally(() => { setLoading(false) })
-          }    
+    //create user
+    const handleSignIn=(email,password)=>{
+            signInWithEmailAndPassword(auth, email, password)
+            .then(result=>{})
+            .catch(error=>{
+                setError(error)
+            })
+            .finally(() => { setLoading(false) })
+    }
+    const handleSignUp = (email, password,name) => {
+        createUserWithEmailAndPassword(auth, email, password)
+        .then(result => {
+        })
+        .catch(error => {
+            setError(error)
+        })
+        .finally(() => { setLoading(false) })   
+    }    
     
-
-    
-
     const logOut = () => {
         setLoading(true);
         signOut(auth)
@@ -69,6 +62,7 @@ const useFirebase = () => {
 
     return {
         user,
+        error,
         loading,
         signInWithGoogle,
         logOut,

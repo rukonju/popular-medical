@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Check2Circle } from 'react-bootstrap-icons';
 import useServices from '../../hooks/useServices';
@@ -24,7 +24,7 @@ const Home = () => {
                 </div>
             </div>
             {/* servises */}
-            <h1 style={{borderBottom:"4px solid blue"}} className="text-center mx-auto my-4"><h1>Our services</h1></h1>
+            <h1 className="text-center mx-auto my-4">Our services</h1>
             <Container className='serv-home py-2'>
             <Row xs={1} md={3} style={{justifyContent:"center", alignItems:"center"}}>
                 {
@@ -63,7 +63,7 @@ const Home = () => {
             </Container>
             </div>
             <Container>
-                <FAQ></FAQ>
+                <FAQ  style={{marginTop:"-80px"}}></FAQ>
             </Container>
             </div>
 
