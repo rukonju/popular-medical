@@ -2,12 +2,11 @@ import { useState, useEffect } from 'react';
 import { getAuth,signInWithEmailAndPassword,createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut} from "firebase/auth";
 import firebaseInitialize from '../Firebase/firebase.init';
 
-
 firebaseInitialize()
 
 const useFirebase = () => {
-    const [user, setUser] = useState([]);
-    const [userName, setUserName] = useState({});
+    const [user, setUser] = useState({});
+    const [userName, setUserName] = useState('');
     const [loading, setLoading] = useState(true);
     const [error,setError]=useState()
     
@@ -50,7 +49,7 @@ const useFirebase = () => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                setUser([user])
+                setUser(user)
             }
             else {
                 setUser();
@@ -61,8 +60,7 @@ const useFirebase = () => {
     }, [auth])
 
     const displayUserName=(name)=>{
-            setUserName(name)
-        
+            setUserName(name)   
     }
 
     return {
