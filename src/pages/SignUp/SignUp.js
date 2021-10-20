@@ -8,19 +8,22 @@ import svg from '../../images/signup.svg'
 
 const SignUp = () => {
     const [password, setPassword]=useState();
-    const {handleSignUp}=useAuth()
-    const { register, handleSubmit } = useForm();
+    const { displayUserName, handleSignUp}=useAuth()
+    const { register, handleSubmit, } = useForm();
 
     const history=useHistory();
     const location=useLocation();
     const ridirect_url=location.state?.from || "/home";
 
     const onSubmit = data =>{
-        const {email,password}=data;
+        const {email,password, name}=data;
         setPassword(password)
         if(password.length>=6){
             handleSignUp(email,password)
-            history.push(ridirect_url)
+            .then(result=>{
+                history.push(ridirect_url)
+            })
+            displayUserName(name);
         } 
     };
     

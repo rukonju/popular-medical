@@ -46,7 +46,7 @@ const Appoinment = () => {
                 <Form.Label>Example textarea</Form.Label>
                 <Form.Control as="textarea" rows={3} />
             </Form.Group>
-            <Button variant="dark" type="submit">Prossed to FAQ</Button>
+            <Button variant="dark">Prossed to Payment </Button>
             </Form>
             </Container>
         </div>

@@ -4,11 +4,10 @@ import { Link } from 'react-router-dom';
 
 const Service = ({service}) => {
     const{id, title, details, image}=service;
-    
     return (
         <Col>
-            <div className="m-3 bg-info">
-            <Row xs={1} md={2}>
+            <div data-aos="fade-left" data-aos-duration="2000" className="m-3 shadow rounded-3 bg-info">
+            <Row  xs={1} md={2}>
             <Col>
                 <div>
                 <img src={image} alt=""width="100%"/>  

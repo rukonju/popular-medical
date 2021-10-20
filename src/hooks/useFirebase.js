@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
-import { getAuth,signInWithEmailAndPassword,createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import { getAuth,signInWithEmailAndPassword,createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut} from "firebase/auth";
 import firebaseInitialize from '../Firebase/firebase.init';
 
 
 firebaseInitialize()
 
 const useFirebase = () => {
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState([]);
+    const [userName, setUserName] = useState({});
     const [loading, setLoading] = useState(true);
     const [error,setError]=useState()
     
@@ -20,21 +21,19 @@ const useFirebase = () => {
     }
     //create user
     const handleSignIn=(email,password)=>{
-            signInWithEmailAndPassword(auth, email, password)
-            .then(result=>{console.log(result.user)})
+            return signInWithEmailAndPassword(auth, email, password)
             .catch(error=>{
                 setError(error)
             })
             .finally(() => { setLoading(false) })
     }
-    const handleSignUp = (email, password) => {
-        createUserWithEmailAndPassword(auth, email, password)
-        .then(result => {
-            console.log(result.user)
-        })
+    const handleSignUp = (email, password,name) => {
+        return createUserWithEmailAndPassword(auth, email, password)
+        
         .catch(error => {
             setError(error)
         })
+        
         .finally(() => { setLoading(false) })   
     }    
     
@@ -51,24 +50,32 @@ const useFirebase = () => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                setUser(user);
+                setUser([user])
             }
             else {
-                setUser({});
+                setUser();
             }
             setLoading(false);
         });
         return () => unsubscribe;
     }, [auth])
 
+    const displayUserName=(name)=>{
+            setUserName(name)
+        
+    }
+
     return {
         user,
         error,
         loading,
+        userName,
         signInWithGoogle,
         logOut,
         handleSignIn,
-        handleSignUp
+        handleSignUp,
+        displayUserName
+
     }
 }
 

@@ -28,7 +28,7 @@ const ServiceHome = ({service}) => {
                 </div>
                 <Link style={{textDecoration:"none"}} to={`/ditails/${service?.id}`}>
                 <div className="d-grid">
-                    <Button variant="outline-info">
+                    <Button data-aos="fade-up"data-aos-duration="1000" variant="outline-info">
                         <h5>Ditails</h5>
                     </Button>
                 </div>

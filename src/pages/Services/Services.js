@@ -5,7 +5,6 @@ import Service from '../../Service/Service';
 import aboutBanner from '../../images/about.png';
 const Services = () => {
     const {services}=useServices();
-    console.log(services)
     return (
         <div>
             <div style={{backgroundImage:`url(${aboutBanner})`}} className="mb-5 text-center">
@@ -15,6 +14,8 @@ const Services = () => {
                 <p className="pb-5">Call for Appointment</p>
                 </div>
             </div>
+            <h1 className=" text-center my-5">Choose your service</h1>
+            <h4 className=" text-center mb-5">Simply make a appoinment to get service</h4>
             <Container>
             <Row xs={1} md={2}>
                 {

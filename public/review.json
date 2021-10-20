@@ -1,0 +1,44 @@
+[
+    {
+        "id":"1",
+        "name":"Rukon",
+        "rating":5,
+        "image":"https://i.ibb.co/g3pN1JL/20211020-114046-0000.png",
+        "customerReview":"The environment of this hospital is really good. All staff are so cooperative. Don't hesitate to opponent in this hospital. The environment of this hospital is really good. All staff are so cooperative. Don't hesitate to opponent in this hospital"
+    },
+    {
+        "id":"2",
+        "name":"Rukon",
+        "rating":5,
+        "image":"https://i.ibb.co/Ttkhk40/20211020-114158-0000.png",
+        "customerReview":"Service was really good and wasn't so expensive. Don't hesitate to make appointment in this hospital. Don't hesitate to opponent in this hospital. The environment of this hospital is really good. All staff are so cooperative. Don't hesitate to opponent in this hospital"
+    },
+    {
+        "id":"3",
+        "name":"Rukon",
+        "rating":5,
+        "image":"https://i.ibb.co/vw6DRr0/20211020-114704-0000.png",
+        "customerReview":"Don't hesitate to appoint in this hospital. They provide really good service the customers. All the doctors are qualified. Don't hesitate to opponent in this hospital. The environment of this hospital is really good. All staff are so cooperative. Don't hesitate to opponent in this hospital"
+    },
+    {
+        "id":"4",
+        "name":"Rukon",
+        "rating":5,
+        "image":"https://i.ibb.co/HnTsvmV/20211020-114804-0000.png",
+        "customerReview":"As a patient I can say they are doing great. Service is is really good and cool as well as environment. Don't hesitate to opponent in this hospital. The environment of this hospital is really good. All staff are so cooperative. Don't hesitate to opponent in this hospital"
+    },
+    {
+        "id":"5",
+        "name":"Rukon",
+        "rating":5,
+        "image":"https://i.ibb.co/qCvpFZk/20211020-114854-0000.png",
+        "customerReview":"It is a amazing hospital I ever visit. It is neat and clean. All staff are doing great. Don't hesitate to appoint in this hospital. Don't hesitate to opponent in this hospital. The environment of this hospital is really good. All staff are so cooperative. Don't hesitate to opponent in this hospital"
+    },
+    {
+        "id":"6",
+        "name":"Rukon",
+        "rating":5,
+        "image":"https://i.ibb.co/Xk6zx95/20211020-115006-0000.png",
+        "customerReview":"This is very beautiful place. The  environment is really cool all staff are so co-operative.They are using least technically. Don't hesitate to opponent in this hospital. The environment of this hospital is really good. All staff are so cooperative. Don't hesitate to opponent in this hospital"
+    }
+]

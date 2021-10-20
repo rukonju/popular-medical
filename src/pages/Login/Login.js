@@ -17,7 +17,9 @@ const Login = () => {
     const onSubmit = data =>{
         const {email,password}=data;
         handleSignIn(email,password)
-        
+        .then(retult=>{
+            history.push(ridirect_url)
+        })
     };
 
     const handleGoogleSignIn=()=>{

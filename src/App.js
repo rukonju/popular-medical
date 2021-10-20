@@ -13,8 +13,7 @@ import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import Services from './pages/Services/Services';
 import SignUp from './pages/SignUp/SignUp';
 import Footer from './pages/Footer/Footer';
-import FAQ from './pages/FAQ/FAQ';
-import { Container } from 'react-bootstrap';
+import Reviews from './pages/Reviews/Reviews';
 
 function App() {
   return (
@@ -38,10 +37,8 @@ function App() {
           <PrivateRoute path="/appoinment">
             <Appoinment></Appoinment>
           </PrivateRoute>
-          <PrivateRoute path="/faq">
-            <Container style={{marginTop:"100px"}}>
-            <FAQ></FAQ>
-            </Container>
+          <PrivateRoute path="/review">
+            <Reviews></Reviews>
           </PrivateRoute>
           <Route path="/about">
             <About></About>
