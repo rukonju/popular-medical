@@ -21,7 +21,7 @@ const useFirebase = () => {
     //create user
     const handleSignIn=(email,password)=>{
             signInWithEmailAndPassword(auth, email, password)
-            .then(result=>{setUser(result.user)})
+            .then(result=>{console.log(result.user)})
             .catch(error=>{
                 setError(error)
             })
@@ -30,7 +30,7 @@ const useFirebase = () => {
     const handleSignUp = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
         .then(result => {
-            setUser(result.user)
+            console.log(result.user)
         })
         .catch(error => {
             setError(error)
@@ -47,7 +47,7 @@ const useFirebase = () => {
             .finally(() => setLoading(false))
     }
 
-    // observe whether user auth state changed or not
+    // user auth state changed or not
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {

@@ -16,7 +16,8 @@ const Login = () => {
     const ridirect_url=location?.state?.from || "/home";
     const onSubmit = data =>{
         const {email,password}=data;
-        handleSignIn(email,password)   
+        handleSignIn(email,password)
+        
     };
 
     const handleGoogleSignIn=()=>{
