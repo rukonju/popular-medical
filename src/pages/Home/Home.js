@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import { Check2Circle } from 'react-bootstrap-icons';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Check2Circle, Star, StarFill } from 'react-bootstrap-icons';
 import useServices from '../../hooks/useServices';
 import banner from'../../images/banner-bg.png'
 import bannerImage from '../../images/banner-image.png'
@@ -11,6 +11,7 @@ import useReview from '../../hooks/userReview';
 import ServiceHome from '../ServiceHome/ServiceHome';
 import './Home.css'
 import { NavLink } from 'react-router-dom';
+import Rating from 'react-rating'
 
 
 const Home = () => {
@@ -21,7 +22,10 @@ const Home = () => {
         <div>
             {/* this is banner */}
             <div style={{backgroundImage:`url(${banner})`}} className='headers'>
-                <h1 data-aos="fade-up" data-aos-duration="2000"  className="">Welcome to <br /> <span>Popular Medical Center</span></h1>
+                <div data-aos="fade-up" data-aos-duration="2000">
+                <h1 className="">Welcome to <br /> <span>Popular Medical Center</span></h1><br />
+                <Button size="lg">Call for more info</Button>
+                </div>
                 <div>
                     <img src={bannerImage} alt="" width="100%" />
                 </div>
@@ -62,7 +66,7 @@ const Home = () => {
             <h3 data-aos="fade-right"data-aos-duration="2000" >Help & FAQ</h3>
             <h1 data-aos="fade-right"data-aos-duration="2000" >General Question</h1>
             <Container>
-                <p data-aos="fade-right"data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum doloremque unde possimus aut architecto nihil rerum iste ratione, repellendus a voluptatem deleniti neque rem ex voluptates, cupiditate autem quo!</p>
+                <p data-aos="fade-right"data-aos-duration="2000">We are here to help you . Any kind of question you wants to know please call now. We are here to help you . Any kind of question you wants to know please call now.</p>
             </Container>
             </div>
             <Container>
@@ -101,12 +105,17 @@ const Home = () => {
                 </Row>
                 
             </Container>
-            <Container>
-                <div>
-                    <img src={reviews[0]?.image} alt="" />
+            <Container className="text-center border my-4 border-2 rounded-3">
+                <div >
+                    <img src={reviews[0]?.image} alt="" style={{borderRadius:"100%"}} />
                 </div>
-                <p>{reviews[0]?.name}</p>
-                <p>{reviews[0]?.rating}</p>
+                <h4>{reviews[0]?.name}</h4>
+                <Rating 
+                initialRating="5"
+                placeholderSymbol={<StarFill color="goldenrod"/>} 
+                fullSymbol={<StarFill color="goldenrod"/>}
+                emptySymbol={<Star color="goldenrod"/>}/>
+
                 <p className="text-muted">{reviews[0]?.customerReview}</p>
                 <NavLink to="/review"  style={{textDecoration:"none", fontSize:"20px"}}>View more review</NavLink>
             </Container>

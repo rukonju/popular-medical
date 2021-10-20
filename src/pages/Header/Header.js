@@ -20,7 +20,7 @@ const Header = () => {
         <div className={!isScroll?"bg-light":"fixed-top bg-light"}>
             <Navbar expand="lg" >
                 <Container>
-                    <NavLink to="/home">
+                    <NavLink style={{textDecoration:"none"}} to="/home">
                     <img
                         src="/logo.png"
                         width="30"
@@ -28,8 +28,8 @@ const Header = () => {
                         className="d-inline-block align-top"
                         alt="React Bootstrap logo"
                     />
+                    <Navbar.Brand className="ms-1">Popular Medical</Navbar.Brand>
                     </NavLink>
-                    <Navbar.Brand>Medical</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto links">

@@ -11,7 +11,7 @@ const About = () => {
                 <div className="text-light about py-5" >
                 <h1 className="pt-5">We Care About Your Health</h1>
                 <p>Take care of your health with us</p>
-                <p className="pb-5">Call for Appointment</p>
+                <h4 className="pb-5">Call for Appointment</h4>
                 </div>
             </div>
             <Container className=" border p-4 rounded-3 bg-info text-center">

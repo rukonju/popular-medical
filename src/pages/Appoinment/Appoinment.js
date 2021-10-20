@@ -34,12 +34,12 @@ const Appoinment = () => {
             <Row className="mb-3">
                 <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Choose Service</Form.Label>
-                <Form.Control type="number" placeholder="Enter phone" />
+                <Form.Control type="text" placeholder="Enter service" />
                 </Form.Group>
 
                 <Form.Group as={Col} controlId="formGridPassword">
                 <Form.Label>Choose Doctor</Form.Label>
-                <Form.Control type="date" />
+                <Form.Control type="text" />
                 </Form.Group>
             </Row>
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
